@@ -1,14 +1,14 @@
-# AdMob_ANE_IOS
-Native Google AdMob ANE for Adobe AIR iOS — Banner, Interstitial, Rewarded, Rewarded Interstitial &amp; App Open ads.
-# AdMob ANE for Adobe AIR — iOS
+# 🚀 AdMob_ANE_IOS
+
+**Native Google AdMob ANE for Adobe AIR iOS — Banner, Interstitial, Rewarded, Rewarded Interstitial & App Open ads.**
+
+# 📱 AdMob ANE for Adobe AIR — iOS
 
 A native **Google Mobile Ads (AdMob) Native Extension (ANE)** for **Adobe AIR 51.x** on iOS.
 
 This project provides a native ActionScript 3 API for integrating Google AdMob advertising into Adobe AIR applications while keeping the API simple and consistent across all supported ad formats.
 
----
-
-# Overview
+# 📋 Overview
 
 The ANE supports the following Google advertising formats:
 
@@ -33,10 +33,8 @@ It also provides APIs for:
 * Native error codes and messages
 * Reward type and amount
 * Ad object destruction and cleanup
-  
----
 
-# Installation
+# 📦 Installation
 
 ## iOS Application Descriptor Configuration
 
@@ -103,9 +101,7 @@ The value shown above is Google's official test AdMob Application ID.
 >
 > For production, replace it with your own valid AdMob Application ID.
 
----
-
-# Basic Initialization
+# ⚙️ Basic Initialization
 
 Import the API:
 
@@ -164,9 +160,7 @@ adMob.addEventListener(
 adMob.initAdMob(ADMOB_APP_ID);
 ```
 
----
-
-# 1. Banner Ads
+# 1️⃣ Banner Ads
 
 Banner advertisements are persistent native ads that can be positioned on the screen and refreshed when required.
 
@@ -184,8 +178,6 @@ The ANE provides complete control over:
 * Click events
 * Impression events
 * Error reporting
-
----
 
 ## 1.1 Show Banner
 
@@ -227,8 +219,6 @@ Controls where the banner is displayed.
 
 Controls the banner format.
 
----
-
 ## 1.2 Banner Positions
 
 Available positions:
@@ -267,8 +257,6 @@ adMob.showBanner(
 );
 ```
 
----
-
 ## 1.3 Banner Sizes
 
 Available sizes:
@@ -303,8 +291,6 @@ adMob.showBanner(
 
 `SIZE_ADAPTIVE` allows the native implementation to determine an appropriate banner height.
 
----
-
 ## 1.4 Hide Banner
 
 Hide the current banner:
@@ -321,8 +307,6 @@ Event:
 AdMobANE.BANNER_HIDDEN
 ```
 
----
-
 ## 1.5 Remove Banner
 
 Remove the current banner:
@@ -338,8 +322,6 @@ AdMobANE.BANNER_REMOVED
 ```
 
 Use this when the banner is no longer required.
-
----
 
 ## 1.6 Change Banner Position
 
@@ -365,8 +347,6 @@ Failure event:
 AdMobANE.BANNER_POSITION_FAILED
 ```
 
----
-
 ## 1.7 Get Banner Height
 
 Get the current native banner height:
@@ -378,8 +358,6 @@ trace("Banner height:", height);
 ```
 
 This can be useful for adjusting AIR display objects around the native banner.
-
----
 
 ## 1.8 Refresh Banner
 
@@ -415,8 +393,6 @@ adMob.addEventListener(
 );
 ```
 
----
-
 ## 1.9 Banner Events
 
 ```actionscript
@@ -438,8 +414,6 @@ AdMobANE.BANNER_POSITION_FAILED
 AdMobANE.BANNER_HIDDEN
 AdMobANE.BANNER_REMOVED
 ```
-
----
 
 ## 1.10 Banner Example
 
@@ -478,9 +452,7 @@ private function onBannerLoadFailed(
 }
 ```
 
----
-
-# 2. Interstitial Ads
+# 2️⃣ Interstitial Ads
 
 Interstitial ads are full-screen advertisements.
 
@@ -494,8 +466,6 @@ The ANE provides:
 * Impression notification
 * Destroy
 * Error code/message reporting
-
----
 
 ## 2.1 Load Interstitial
 
@@ -527,8 +497,6 @@ or:
 AdMobANE.INTERSTITIAL_LOAD_FAILED
 ```
 
----
-
 ## 2.2 Check Interstitial State
 
 ```actionscript
@@ -549,8 +517,6 @@ Returns:
 * `true` — an interstitial is ready
 * `false` — no interstitial is currently ready
 
----
-
 ## 2.3 Show Interstitial
 
 ```actionscript
@@ -564,8 +530,6 @@ adMob.isInterstitialLoaded()
 ```
 
 before showing.
-
----
 
 ## 2.4 Destroy Interstitial
 
@@ -581,8 +545,6 @@ Event:
 AdMobANE.INTERSTITIAL_DESTROYED
 ```
 
----
-
 ## 2.5 Interstitial Events
 
 ```actionscript
@@ -597,8 +559,6 @@ AdMobANE.INTERSTITIAL_IMPRESSION
 
 AdMobANE.INTERSTITIAL_DESTROYED
 ```
-
----
 
 ## 2.6 Interstitial Example
 
@@ -650,9 +610,7 @@ private function onInterstitialClosed(
 }
 ```
 
----
-
-# 3. Rewarded Ads
+# 3️⃣ Rewarded Ads
 
 Rewarded advertisements provide a reward to the user after the rewarded ad interaction is completed.
 
@@ -670,8 +628,6 @@ The ANE supports:
 * Load errors
 * Destroy
 
----
-
 ## 3.1 Load Rewarded
 
 ```actionscript
@@ -688,8 +644,6 @@ loadRewarded(
 ):void
 ```
 
----
-
 ## 3.2 Check Rewarded State
 
 ```actionscript
@@ -705,15 +659,11 @@ Method:
 isRewardedLoaded():Boolean
 ```
 
----
-
 ## 3.3 Show Rewarded
 
 ```actionscript
 adMob.showRewarded();
 ```
-
----
 
 ## 3.4 Reward Event
 
@@ -749,8 +699,6 @@ Reward type: coins
 Reward amount: 10
 ```
 
----
-
 ## 3.5 Destroy Rewarded
 
 ```actionscript
@@ -762,8 +710,6 @@ Event:
 ```actionscript
 AdMobANE.REWARDED_DESTROYED
 ```
-
----
 
 ## 3.6 Rewarded Events
 
@@ -780,8 +726,6 @@ AdMobANE.REWARDED_IMPRESSION
 AdMobANE.REWARDED_REWARD
 AdMobANE.REWARDED_DESTROYED
 ```
-
----
 
 ## 3.7 Rewarded Example
 
@@ -811,9 +755,7 @@ adMob.loadRewarded(
 );
 ```
 
----
-
-# 4. Rewarded Interstitial Ads
+# 4️⃣ Rewarded Interstitial Ads
 
 Rewarded Interstitial combines a full-screen advertisement with a reward callback.
 
@@ -830,8 +772,6 @@ The API provides:
 * Error handling
 * Destroy
 
----
-
 ## 4.1 Load
 
 ```actionscript
@@ -839,8 +779,6 @@ adMob.loadRewardedInterstitial(
     REWARDED_INTERSTITIAL_ID
 );
 ```
-
----
 
 ## 4.2 Check Loaded State
 
@@ -851,15 +789,11 @@ if (adMob.isRewardedInterstitialLoaded())
 }
 ```
 
----
-
 ## 4.3 Show
 
 ```actionscript
 adMob.showRewardedInterstitial();
 ```
-
----
 
 ## 4.4 Reward
 
@@ -888,15 +822,11 @@ private function onRewardedInterstitialReward(
 }
 ```
 
----
-
 ## 4.5 Destroy
 
 ```actionscript
 adMob.destroyRewardedInterstitial();
 ```
-
----
 
 ## 4.6 Events
 
@@ -914,9 +844,7 @@ AdMobANE.REWARDED_INTERSTITIAL_REWARD
 AdMobANE.REWARDED_INTERSTITIAL_DESTROYED
 ```
 
----
-
-# 5. App Open Ads
+# 5️⃣ App Open Ads
 
 App Open ads are intended for displaying an advertisement when the application starts or returns to the foreground.
 
@@ -930,8 +858,6 @@ The ANE supports:
 * Impression
 * Destroy
 
----
-
 ## 5.1 Load
 
 ```actionscript
@@ -939,8 +865,6 @@ adMob.loadAppOpen(
     APP_OPEN_ID
 );
 ```
-
----
 
 ## 5.2 Check Loaded State
 
@@ -951,23 +875,17 @@ if (adMob.isAppOpenLoaded())
 }
 ```
 
----
-
 ## 5.3 Show
 
 ```actionscript
 adMob.showAppOpen();
 ```
 
----
-
 ## 5.4 Destroy
 
 ```actionscript
 adMob.destroyAppOpen();
 ```
-
----
 
 ## 5.5 Events
 
@@ -984,9 +902,7 @@ AdMobANE.APP_OPEN_IMPRESSION
 AdMobANE.APP_OPEN_DESTROYED
 ```
 
----
-
-# 6. Google User Messaging Platform — UMP
+# 6️⃣ Google User Messaging Platform — UMP
 
 The ANE provides integration with Google's User Messaging Platform.
 
@@ -1000,8 +916,6 @@ The API supports:
 * Consent errors
 * Consent form dismissal
 * Consent form errors
-
----
 
 ## 6.1 Request Consent Information
 
@@ -1024,8 +938,6 @@ requestConsentInfo(
     testMode:Boolean = false
 ):void
 ```
-
----
 
 ## 6.2 Consent Status
 
@@ -1077,15 +989,11 @@ switch (status)
 }
 ```
 
----
-
 ## 6.3 Show Consent Form
 
 ```actionscript
 adMob.showConsentForm();
 ```
-
----
 
 ## 6.4 UMP Events
 
@@ -1111,9 +1019,7 @@ adMob.addEventListener(
 );
 ```
 
----
-
-# 7. Apple App Tracking Transparency — ATT
+# 7️⃣ Apple App Tracking Transparency — ATT
 
 The ANE provides access to Apple's App Tracking Transparency authorization request.
 
@@ -1180,13 +1086,9 @@ private function onATTFailed(
 
 The application must also provide the required iOS tracking usage description in its application configuration when ATT is used.
 
----
-
-# 8. Global AdMob Settings
+# 8️⃣ Global AdMob Settings
 
 These settings apply to the native AdMob implementation.
-
----
 
 ## Volume
 
@@ -1210,8 +1112,6 @@ adMob.setVolume(0.5);
 adMob.setVolume(1.0);
 ```
 
----
-
 ## Muted
 
 Mute:
@@ -1225,8 +1125,6 @@ Unmute:
 ```actionscript
 adMob.setMuted(false);
 ```
-
----
 
 ## Child Directed
 
@@ -1242,8 +1140,6 @@ Disable:
 adMob.setChildDirected(false);
 ```
 
----
-
 ## Under Age of Consent
 
 Enable:
@@ -1257,8 +1153,6 @@ Disable:
 ```actionscript
 adMob.setUnderAgeOfConsent(false);
 ```
-
----
 
 ## Maximum Content Rating
 
@@ -1288,9 +1182,7 @@ adMob.setMaxContentRating(
 );
 ```
 
----
-
-# 9. Test Devices
+# 9️⃣ Test Devices
 
 Add a test device:
 
@@ -1312,9 +1204,7 @@ If the device ID is `null` or empty, the call is ignored.
 
 During development, use Google's official test ad unit IDs or configure the device as a test device.
 
----
-
-# 10. AdMobEvent
+# 🔟 AdMobEvent
 
 All native events are converted into:
 
@@ -1335,8 +1225,6 @@ public var rewardType:String;
 public var rewardAmount:int;
 public var errorCode:int;
 ```
-
----
 
 ## rewardType
 
@@ -1361,8 +1249,6 @@ has two possible roles:
 * Reward type for reward events
 * Error message for error events
 
----
-
 ## rewardAmount
 
 Contains the reward amount for:
@@ -1377,8 +1263,6 @@ Example:
 ```actionscript
 trace(e.rewardAmount);
 ```
-
----
 
 ## errorCode
 
@@ -1396,9 +1280,7 @@ For events without an error/status code, this is normally:
 0
 ```
 
----
-
-# 11. Error Handling
+# 1️⃣1️⃣ Error Handling
 
 Error events provide:
 
@@ -1453,9 +1335,7 @@ CONSENT_FORM_FAILED
 ATT_FAILED
 ```
 
----
-
-# 12. Complete Example
+# 1️⃣2️⃣ Complete Example
 
 ```actionscript
 import com.admob.mx.AdMobANE;
@@ -1600,9 +1480,7 @@ function onReward(
 }
 ```
 
----
-
-# 13. Complete API Reference
+# 1️⃣3️⃣ Complete API Reference
 
 ## Core
 
@@ -1613,8 +1491,6 @@ isReady:Boolean
 initAdMob(appId:String):void
 dispose():void
 ```
-
----
 
 ## Banner
 
@@ -1637,8 +1513,6 @@ getBannerHeight():int
 refreshBanner():void
 ```
 
----
-
 ## Interstitial
 
 ```actionscript
@@ -1652,8 +1526,6 @@ isInterstitialLoaded():Boolean
 
 destroyInterstitial():void
 ```
-
----
 
 ## Rewarded
 
@@ -1669,8 +1541,6 @@ isRewardedLoaded():Boolean
 destroyRewarded():void
 ```
 
----
-
 ## Rewarded Interstitial
 
 ```actionscript
@@ -1685,8 +1555,6 @@ isRewardedInterstitialLoaded():Boolean
 destroyRewardedInterstitial():void
 ```
 
----
-
 ## App Open
 
 ```actionscript
@@ -1700,8 +1568,6 @@ isAppOpenLoaded():Boolean
 
 destroyAppOpen():void
 ```
-
----
 
 ## Settings
 
@@ -1731,8 +1597,6 @@ addTestDevice(
 ):void
 ```
 
----
-
 ## UMP
 
 ```actionscript
@@ -1745,17 +1609,13 @@ showConsentForm():void
 getConsentStatus():int
 ```
 
----
-
 ## ATT
 
 ```actionscript
 requestATT():void
 ```
 
----
-
-# 14. Event Reference
+# 1️⃣4️⃣ Event Reference
 
 ## AdMob Initialization
 
@@ -1763,8 +1623,6 @@ requestATT():void
 ADMOB_INITIALIZED
 ADMOB_INIT_FAILED
 ```
-
----
 
 ## Banner
 
@@ -1783,8 +1641,6 @@ BANNER_HIDDEN
 BANNER_REMOVED
 ```
 
----
-
 ## Interstitial
 
 ```actionscript
@@ -1796,8 +1652,6 @@ INTERSTITIAL_CLOSED
 INTERSTITIAL_IMPRESSION
 INTERSTITIAL_DESTROYED
 ```
-
----
 
 ## Rewarded
 
@@ -1812,8 +1666,6 @@ REWARDED_REWARD
 REWARDED_DESTROYED
 ```
 
----
-
 ## Rewarded Interstitial
 
 ```actionscript
@@ -1827,8 +1679,6 @@ REWARDED_INTERSTITIAL_REWARD
 REWARDED_INTERSTITIAL_DESTROYED
 ```
 
----
-
 ## App Open
 
 ```actionscript
@@ -1841,8 +1691,6 @@ APP_OPEN_IMPRESSION
 APP_OPEN_DESTROYED
 ```
 
----
-
 ## UMP
 
 ```actionscript
@@ -1852,16 +1700,12 @@ CONSENT_FORM_DISMISSED
 CONSENT_FORM_FAILED
 ```
 
----
-
 ## ATT
 
 ```actionscript
 ATT_STATUS
 ATT_FAILED
 ```
-
----
 
 ## Settings
 
@@ -1870,9 +1714,7 @@ UNDER_AGE_SET
 MAX_RATING_SET
 ```
 
----
-
-# 15. Singleton Architecture
+# 1️⃣5️⃣ Singleton Architecture
 
 `AdMobANE` uses the Singleton pattern.
 
@@ -1891,9 +1733,7 @@ new AdMobANE();
 
 The constructor prevents multiple instances and throws an error if another instance already exists.
 
----
-
-# 16. Cleanup
+# 1️⃣6️⃣ Cleanup
 
 When the application no longer needs the ANE:
 
@@ -1914,9 +1754,7 @@ A new instance can subsequently be obtained with:
 AdMobANE.getInstance();
 ```
 
----
-
-# 17. Advertisement Lifecycle
+# 1️⃣7️⃣ Advertisement Lifecycle
 
 ## Interstitial / Rewarded / Rewarded Interstitial / App Open
 
@@ -1951,8 +1789,6 @@ Closed
 Load Again
 ```
 
----
-
 ## Banner
 
 Banner lifecycle:
@@ -1978,38 +1814,196 @@ Hidden
 Removed
 ```
 
----
+# 1️⃣8️⃣ Recommended Project Structure
 
-# 18. Recommended Project Structure
+# 🎨 Adding AdMobANE to Adobe Animate
 
-A typical project can be organized as:
+If you are using **Adobe Animate** to develop your Adobe AIR application, you can add `AdMobANE.ane` directly to the Animate project and use the ActionScript API provided by the extension.
+
+## 1. Copy the ANE into Your Project
+
+Copy:
 
 ```text
-AdMobANE/
-│
-├── AS3/
-│   └── com/
-│       └── admob/
-│           └── mx/
-│               ├── AdMobANE.as
-│               └── AdMobEvent.as
-│
-├── ANE/
-│   ├── AdMobANE.ane
-│   └── ...
-│
-├── iOS/
-│   ├── Native source
-│   ├── Google Mobile Ads SDK
-│   ├── Google UMP SDK
-│   └── ...
-│
-└── README.md
+AdMobANE.ane
 ```
 
----
+into your Adobe Animate project directory.
 
-# 19. Important Notes
+For example:
+
+```text
+MyProject/
+│
+├── MyProject.fla
+├── AdMobANE.ane
+└── ...
+```
+
+You can also keep ANEs inside a dedicated folder:
+
+```text
+MyProject/
+│
+├── MyProject.fla
+├── ANE/
+│   └── AdMobANE.ane
+└── ...
+```
+
+Using a dedicated `ANE` folder is recommended when the project contains multiple native extensions.
+
+## 2. Add the ANE to Adobe Animate
+
+Open your `.fla` project in **Adobe Animate**.
+
+Go to:
+
+```text
+File → ActionScript Settings...
+```
+
+In the **ActionScript Settings** window, select the:
+
+```text
+Library path
+```
+
+tab.
+
+Click:
+
+```text
+Browse to ANE...
+```
+
+or the corresponding browse/add button available in your Animate version, then select:
+
+```text
+AdMobANE.ane
+```
+
+from your project directory.
+
+After adding it, the ANE should appear in the project's library path.
+
+> **Important:** Do not simply copy the ANE into the Animate installation directory. Add the `.ane` to the project through **ActionScript Settings**.
+
+## 3. Add the ANE to the AIR Packaging Configuration
+
+Adding the ANE to **ActionScript Settings → Library path** makes the ActionScript API available to the project.
+
+The ANE must also be included when packaging the AIR application.
+
+When publishing the AIR application, make sure:
+
+```text
+AdMobANE.ane
+```
+
+is included in the application's **Native Extensions / ANE** configuration.
+
+The exact location of this option can differ between Adobe Animate versions.
+
+The important requirement is that the final AIR package contains the ANE for the target platform.
+
+## 4. Recommended Project Structure
+
+A typical Adobe Animate project can look like this:
+
+```text
+MyProject/
+│
+├── MyProject.fla
+├── MyProject-app.xml
+│
+├── ANE/
+│   └── AdMobANE.ane
+│
+├── src/
+│   └── ...
+│
+└── assets/
+    └── ...
+```
+
+The `.fla`, AIR application descriptor, source files, and ANE can therefore remain inside the same project structure.
+
+## 5. Building the iOS Application
+
+Adobe Animate can be used to develop and configure the AIR project.
+
+For the final iOS application, especially when using native iOS ANEs and frameworks, it is recommended to perform the final AIR packaging and signing on **macOS**.
+
+> [!WARNING]
+> **iOS Packaging — macOS Recommended**
+>
+> For the final iOS `.ipa` build, use **macOS with Xcode and the required AIR SDK environment**.
+>
+> Building or exporting the final iOS application on Windows may result in:
+>
+> * Code-signing errors
+> * Linker errors
+> * IPA packaging errors
+> * Invalid application bundles
+> * App Store validation errors
+>
+> This is particularly important when the ANE contains native iOS frameworks.
+
+## 10. Quick Setup
+
+The complete workflow is:
+
+```text
+Adobe Animate
+      │
+      ▼
+Create/Open AIR project
+      │
+      ▼
+Copy AdMobANE.ane
+      │
+      ▼
+ActionScript Settings
+      │
+      ▼
+Add AdMobANE.ane to Library Path
+      │
+      ▼
+Add ANE to AIR packaging configuration
+      │
+      ▼
+Configure application.xml
+      │
+      ├── GADApplicationIdentifier
+      ├── NSUserTrackingUsageDescription
+      ├── SKAdNetworkItems
+      └── iPhone settings
+      │
+      ▼
+Import AdMobANE classes
+      │
+      ▼
+Initialize AdMob
+      │
+      ▼
+ADMOB_INITIALIZED
+      │
+      ▼
+Load / Show advertisements
+      │
+      ▼
+Final iOS packaging
+      │
+      ▼
+macOS + AIR SDK + Xcode
+      │
+      ▼
+IPA
+```
+
+
+# 1️⃣9️⃣ Important Notes
 
 ### Initialization
 
@@ -2029,8 +2023,6 @@ ADMOB_INITIALIZED
 
 before starting the normal ad workflow.
 
----
-
 ### Loading
 
 Interstitial, Rewarded, Rewarded Interstitial and App Open ads are asynchronous.
@@ -2042,8 +2034,6 @@ Always wait for their corresponding:
 ```
 
 event before showing them.
-
----
 
 ### Error Handling
 
@@ -2070,8 +2060,6 @@ e.rewardType
 
 for the error message on error events.
 
----
-
 ### Reward Handling
 
 Only grant the application's reward from:
@@ -2095,11 +2083,7 @@ e.rewardAmount
 
 to determine the reward.
 
----
-
----
-
-# SDKs and Native Libraries
+# 🧩 SDKs and Native Libraries
 
 The iOS implementation is based on the **latest available stable Google Mobile Ads SDK for iOS used by this project**, together with the corresponding Google User Messaging Platform SDK.
 
@@ -2114,9 +2098,7 @@ The Google libraries are integrated on the native iOS side of the ANE rather tha
 
 > The exact Google SDK version should be kept synchronized with the version used when building the ANE. The repository should document the exact version in the release/build information whenever a new SDK version is integrated.
 
----
-
-# Requirements
+# 📋 Requirements
 
 * Adobe AIR 51.4.x
 * AdMob App ID
@@ -2131,9 +2113,8 @@ The Google libraries are integrated on the native iOS side of the ANE rather tha
 > Building or exporting the iOS application on **Windows** may cause **code-signing, packaging, linker, or IPA validation errors**, especially when using native iOS ANEs and frameworks.
 >
 > For the most reliable iOS build process, use **macOS with Xcode and the required AIR SDK environment**.
-> 
 
-# 20. License and Third-Party Software
+# 2️⃣0️⃣ License and Third-Party Software
 
 This project is an independent Adobe AIR Native Extension.
 
