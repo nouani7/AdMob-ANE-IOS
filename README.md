@@ -1,4 +1,4 @@
-# 🚀 AdMob_ANE_IOS
+# 🚀 AdMob ANE IOS
 
 **Native Google AdMob ANE for Adobe AIR on iOS — Banner, Interstitial, Rewarded, Rewarded Interstitial & App Open ads with UMP, ATT, lifecycle events, and full ad management.**
 
