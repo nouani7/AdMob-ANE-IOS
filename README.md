@@ -1,7 +1,6 @@
 # 🚀 AdMob_ANE_IOS
 
-**Native Google AdMob ANE for Adobe AIR on iOS — a complete ActionScript 3 integration for Banner, Interstitial, Rewarded, Rewarded Interstitial, and App Open ads, with UMP consent, ATT support, ad lifecycle events, error handling, banner controls, and reward management.**
-
+**Native Google AdMob ANE for Adobe AIR on iOS — Banner, Interstitial, Rewarded, Rewarded Interstitial & App Open ads with UMP, ATT, lifecycle events, and full ad management.**
 
 # 📱 AdMob ANE for Adobe AIR - iOS
 
