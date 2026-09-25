@@ -2083,21 +2083,6 @@ e.rewardAmount
 
 to determine the reward.
 
-# 🧩 SDKs and Native Libraries
-
-The iOS implementation is based on the **latest available stable Google Mobile Ads SDK for iOS used by this project**, together with the corresponding Google User Messaging Platform SDK.
-
-The native iOS implementation uses:
-
-* **Google Mobile Ads SDK for iOS**
-* **Google User Messaging Platform SDK**
-* **Apple App Tracking Transparency framework**
-* **Adobe AIR Native Extension API**
-
-The Google libraries are integrated on the native iOS side of the ANE rather than implemented in ActionScript.
-
-> The exact Google SDK version should be kept synchronized with the version used when building the ANE. The repository should document the exact version in the release/build information whenever a new SDK version is integrated.
-
 # 📋 Requirements
 
 * Adobe AIR 51.4.x
@@ -2113,6 +2098,24 @@ The Google libraries are integrated on the native iOS side of the ANE rather tha
 > Building or exporting the iOS application on **Windows** may cause **code-signing, packaging, linker, or IPA validation errors**, especially when using native iOS ANEs and frameworks.
 >
 > For the most reliable iOS build process, use **macOS with Xcode and the required AIR SDK environment**.
+
+# 🧩 SDKs and Native Libraries
+
+The iOS implementation is based on the **latest available stable Google Mobile Ads SDK for iOS used by this project**, together with the corresponding Google User Messaging Platform SDK.
+
+This ANE is built using the following technologies and SDKs:
+
+- **Google Mobile Ads SDK for iOS:** `13.10.0`
+- **Google User Messaging Platform (UMP) SDK for iOS:** `3.1.0`
+- **Apple App Tracking Transparency (ATT):** Apple iOS SDK / Framework
+- **Adobe AIR SDK:** `51.4.1.1`
+- **Adobe AIR Native Extension API:** Included with Adobe AIR SDK
+
+The native iOS implementation uses Google's Google Mobile Ads SDK and User Messaging Platform SDK together with Apple's native frameworks and the Adobe AIR Native Extension API.
+
+The Google libraries are integrated on the native iOS side of the ANE rather than implemented in ActionScript.
+
+> The exact Google SDK version should be kept synchronized with the version used when building the ANE. The repository should document the exact version in the release/build information whenever a new SDK version is integrated.
 
 # 2️⃣0️⃣ License and Third-Party Software
 
