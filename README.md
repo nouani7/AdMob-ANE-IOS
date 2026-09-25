@@ -2137,3 +2137,35 @@ Developers are responsible for complying with:
 * Google consent requirements
 * Apple App Store requirements
 * Apple's privacy requirements
+
+## ☕ Support the Project
+
+If this project has been useful to you, consider supporting its continued development. Your contribution helps maintain the project, fix bugs, improve compatibility, and develop new features.
+
+### 💙 Support via PayPal
+
+[![Support via PayPal](https://img.shields.io/badge/Support%20via%20PayPal-Donate-0070BA?logo=paypal\&logoColor=white)](https://www.paypal.com/ncp/payment/YFEPDXW4YH7HN)
+
+Every contribution, regardless of size, helps support:
+
+* 🛠️ Continued development and maintenance
+* 🐛 Bug fixes and compatibility improvements
+* 📱 Testing across iOS, macOS, and Adobe AIR versions
+* 📚 Documentation and examples
+* 🚀 New features and future improvements
+
+Thank you for supporting the project and open-source development.
+
+## 🤲 الحمد لله
+
+> **الحمد لله الذي بنعمته تتم الصالحات، والحمد لله على توفيقه وفضله وكرمه.**
+>
+> اللهم لك الحمد والشكر على ما يسّرت ووفّقت وأتممت، وبارك لي فيما أنجزت، واجعله علمًا نافعًا، وعملًا صالحًا، وأثرًا طيبًا ينفع الناس.
+>
+> اللهم كما وفّقتني إليه بفضلك، وفّقني لحسن استعماله، واجعل هذا العمل فيما يرضيك وينفع عبادك، ولا تجعله سببًا في ضرر أو إفساد.
+>
+> **﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ﴾**
+>
+> *الحمد لله دائمًا وأبدًا، وما توفيقي إلا بالله.*
+
+
