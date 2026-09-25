@@ -2087,6 +2087,62 @@ e.rewardAmount
 
 to determine the reward.
 
+# 2️⃣0️⃣ License and Third-Party Software
+
+This project is an independent Adobe AIR Native Extension.
+
+It is not affiliated with or endorsed by Google, Apple, or Adobe.
+
+Google Mobile Ads SDK, Google User Messaging Platform, Apple frameworks, Adobe AIR, and their associated trademarks and software are owned by their respective owners.
+
+Use of Google advertising services remains subject to the applicable Google policies and terms.
+
+Developers are responsible for complying with:
+
+* Google AdMob policies
+* Google consent requirements
+* Apple App Store requirements
+* Apple's privacy requirements
+
+## 🛡️ Ad Policy & Content Controls
+
+To help ensure that this project is used in a beneficial way and remains respectful of Islamic values, **Google AdMob** provides several controls that allow publishers to manage and limit the types of advertisements displayed in their applications.
+
+### 🔒 Blocking Controls
+
+From your **Google AdMob** account, go to:
+
+**Apps → Select your app → Blocking controls**
+
+You can use the available controls to manage advertising content:
+
+* **Sensitive Categories** — Block specific sensitive advertising categories.
+* **General Categories** — Block broader advertising categories.
+* **Advertiser URLs** — Block advertisements associated with specific advertisers or websites.
+* **Ad Review Center** — Review individual advertisements and block or report inappropriate ads.
+
+### 📋 When an Inappropriate Ad Appears
+
+You can review individual advertisements from:
+
+**AdMob → Apps → Select your app → Blocking controls → Ad Review Center**
+
+Review the advertisement and use **Block** or **Report** as appropriate.
+
+It is also recommended to review your **Sensitive Categories** and **General Categories** settings periodically rather than relying only on blocking individual advertisements after they appear.
+
+> ⚠️ **Important**
+>
+> Google classifies advertisements automatically. Therefore, blocking a specific category does not guarantee that every advertisement containing similar content will be prevented.
+>
+> Regularly reviewing advertisements through the **Ad Review Center** provides additional control over the content displayed in your application.
+
+> **Disclaimer**
+>
+> This ANE provides the technical integration with **Google AdMob** only. It does not directly control which advertisements the AdMob network selects and displays.
+>
+> The responsibility for configuring blocking settings and reviewing advertisements rests with the **AdMob account owner**.
+
 # 📋 Requirements
 
 * Adobe AIR 51.4.x
@@ -2095,6 +2151,7 @@ to determine the reward.
 * Compiled `AdMobANE.ane`
 
 > [!WARNING]
+> 
 > ⚠️ **iOS Build — macOS Recommended**
 >
 > For iOS application packaging, it is strongly recommended to build and export the final AIR application on **macOS**.
@@ -2119,24 +2176,85 @@ The native iOS implementation uses Google's Google Mobile Ads SDK and User Messa
 
 The Google libraries are integrated on the native iOS side of the ANE rather than implemented in ActionScript.
 
-> The exact Google SDK version should be kept synchronized with the version used when building the ANE. The repository should document the exact version in the release/build information whenever a new SDK version is integrated.
+---
 
-# 2️⃣0️⃣ License and Third-Party Software
+## 🛡️ سياسة الإعلانات والمحتوى
 
-This project is an independent Adobe AIR Native Extension.
+حرصًا على أن يكون استخدام هذا المشروع نافعًا ومحترمًا للقيم الإسلامية، توفر **Google AdMob** مجموعة من أدوات التحكم التي تساعد أصحاب التطبيقات على إدارة المحتوى الإعلاني والحد من ظهور الإعلانات غير المناسبة.
 
-It is not affiliated with or endorsed by Google, Apple, or Adobe.
+### 🔒 إعدادات حظر الإعلانات
 
-Google Mobile Ads SDK, Google User Messaging Platform, Apple frameworks, Adobe AIR, and their associated trademarks and software are owned by their respective owners.
+من حساب **Google AdMob** انتقل إلى:
 
-Use of Google advertising services remains subject to the applicable Google policies and terms.
+**Apps → اختر التطبيق → Blocking controls**
 
-Developers are responsible for complying with:
+ومن هناك يمكنك استخدام الأدوات المتاحة لإدارة المحتوى الإعلاني:
 
-* Google AdMob policies
-* Google consent requirements
-* Apple App Store requirements
-* Apple's privacy requirements
+* **Sensitive Categories** — لحظر فئات إعلانية حساسة محددة.
+* **General Categories** — لحظر فئات إعلانية عامة.
+* **Advertiser URLs** — لحظر الإعلانات المرتبطة بمعلنين أو مواقع محددة.
+* **Ad Review Center** — لمراجعة الإعلانات الفردية وحظر أو الإبلاغ عن الإعلانات غير المناسبة.
+
+### 📋 عند ظهور إعلان غير مناسب
+
+يمكنك مراجعة الإعلانات الفردية من:
+
+**AdMob → Apps → التطبيق → Blocking controls → Ad Review Center**
+
+ثم مراجعة الإعلان واستخدام خيار **Block** أو **Report** حسب الحالة.
+
+كما يُنصح بمراجعة إعدادات **Sensitive Categories** و**General Categories** بشكل دوري، وعدم الاعتماد فقط على حظر الإعلانات بعد ظهورها.
+
+> ⚠️ **ملاحظة مهمة**
+>
+> تقوم Google بتصنيف الإعلانات آليًا، ولذلك فإن حظر فئة معينة لا يضمن منع جميع الإعلانات التي قد تحتوي على محتوى مشابه.
+>
+> تساعد المراجعة الدورية للإعلانات من خلال **Ad Review Center** على توفير قدر أكبر من التحكم في المحتوى الإعلاني المعروض داخل التطبيق.
+
+> **تنبيه**
+>
+> هذا الـ **ANE** يوفر التكامل التقني مع **Google AdMob** فقط، ولا يتحكم بشكل مباشر في الإعلانات التي تختار شبكة AdMob عرضها.
+>
+> تقع مسؤولية إعداد أدوات الحظر ومراجعة الإعلانات على عاتق **صاحب حساب AdMob**.
+
+نسأل الله أن يجعل هذا العمل نافعًا، وأن يوفقنا إلى استعمال العلم والتقنية فيما فيه الخير والإصلاح، وألا نجعلها سببًا في نشر ما يخالف ديننا أو قيمنا.
+
+---
+
+## 🤲 الحمد لله
+
+> **الحمد لله الذي بنعمته تتم الصالحات، والحمد لله على توفيقه وفضله وكرمه.**
+>
+> اللهم لك الحمد على ما علّمت ووفّقت ويسّرت، ولك الشكر على نعمك التي لا تُحصى.
+>
+> اللهم اجعل هذا العلم والعمل نافعًا للناس، واجعله حجةً لنا لا علينا، وبارك لنا فيه، واهدنا إلى استخدامه فيما يرضيك وينفع عبادك.
+>
+> اللهم لا تجعل ما علّمتنا سببًا في ضرر أحد أو ظلم أحد أو إفساد في الأرض، وأعنّا على استعماله في الخير والإصلاح، واجعلنا ممن يستعملون نعمك فيما تحب وترضى.
+>
+> **قال تعالى:**
+>
+> **﴿وَلَا تَبْغِ الْفَسَادَ فِي الْأَرْضِ ۖ إِنَّ اللَّهَ لَا يُحِبُّ الْمُفْسِدِينَ﴾**
+>
+> *القصص: 77*
+>
+> **وقال تعالى:**
+>
+> **﴿وَلَا تَعَاوَنُوا عَلَى الْإِثْمِ وَالْعُدْوَانِ ۚ وَاتَّقُوا اللَّهَ﴾**
+>
+> *المائدة: 2*
+>
+> **وقال تعالى:**
+>
+> **﴿إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا﴾**
+>
+> *الإسراء: 36*
+>
+> **اللهم اجعل هذا العمل علمًا نافعًا، وعملًا صالحًا، وأثرًا طيبًا، وانفع به من يحتاج إليه.**
+>
+> **رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ.**
+>
+> **وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۖ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ.**
+
 
 ## ☕ Support the Project
 
@@ -2155,17 +2273,4 @@ Every contribution, regardless of size, helps support:
 * 🚀 New features and future improvements
 
 Thank you for supporting the project and open-source development.
-
-## 🤲 الحمد لله
-
-> **الحمد لله الذي بنعمته تتم الصالحات، والحمد لله على توفيقه وفضله وكرمه.**
->
-> اللهم لك الحمد والشكر على ما يسّرت ووفّقت وأتممت، وبارك لي فيما أنجزت، واجعله علمًا نافعًا، وعملًا صالحًا، وأثرًا طيبًا ينفع الناس.
->
-> اللهم كما وفّقتني إليه بفضلك، وفّقني لحسن استعماله، واجعل هذا العمل فيما يرضيك وينفع عبادك، ولا تجعله سببًا في ضرر أو إفساد.
->
-> **﴿رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ﴾**
->
-> *الحمد لله دائمًا وأبدًا، وما توفيقي إلا بالله.*
-
 
